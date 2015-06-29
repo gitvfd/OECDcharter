@@ -1,7 +1,5 @@
-
-<!-- saved from url=(0036)http://oecdfactblog.org/charter.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<script type="text/javascript" src="./charter_files/protovis-r3.2.js"></script>
+<html><head>
+<script type="text/javascript" src="charter_files/protovis-r3.2.js"></script>
 <style>
 #ruler { visibility: hidden; white-space: nowrap; }
 .c0{background-color:#0078ba;}
@@ -712,106 +710,105 @@ function createProperCode(){
 }
 </script>
 
-</head><body data-feedly-mini="yes"><div id="message" style:"display:none;"=""></div>
+<div id="message" style:"display:none;"></div>
 <form id="convertForm" name="convertForm" onsubmit="return false; ">
-	<input type="button" value="Convert" onclick="csvToJson(); "> <input type="reset">
+	<input type="button" value="Convert" onclick="csvToJson(); " /> <input type="reset" />
 	<div id="formDiv">
 		<div id="col1">
 			<div id="dataDiv">
-				<span class="tSpan"><label for="csv">Data:</label></span><input type="checkbox" name="blue" checked="true">Blue title<br>
-				<textarea id="csv" name="csv" rows="10" cols="60"></textarea><br><br>
+				<span class="tSpan"><label for="csv">Data:</label></span><input type="checkbox" name="blue" checked="true"/>Blue title<br />
+				<textarea id="csv" name="csv" rows="10" cols="60"></textarea><br /><br />
 			</div>
-		</div><br>
+		</div><br/>
 		<div id="col2">
 			<div id="SizeDiv">
 				<span class="tSpan">Size:</span>
 				<select id="size">
-					<option value="0">Very large (800x533)</option>
-	  				<option value="1">Large (600x400)</option>
-	  				<option selected="" value="2">Medium (330x220)</option>
-	  				<option value="3">Small (260x195)</option>
-	  				<option value="4">Thumbnail (250x200)</option>
-	  				<option value="5">Vertical (130x250)</option>
+					<option value=0>Very large (800x533)</option>
+	  				<option value=1>Large (600x400)</option>
+	  				<option selected value=2>Medium (330x220)</option>
+	  				<option value=3>Small (260x195)</option>
+	  				<option value=4>Thumbnail (250x200)</option>
+	  				<option value=5>Vertical (130x250)</option>
 				</select>
-			</div><br>
+			</div><br/>
 			<div id="MarginsDiv">
 				<span class="tSpan">Margins:</span>
-				top: <input type="text" name="header" size="3" value="auto">&nbsp;bottom: <input size="3" type="text" name="footer" value="auto">&nbsp;
-				left: <input type="text" name="axis" size="3" value="auto">&nbsp;right: <input size="3" type="text" name="margin" value="auto"><br>
-			</div><br>
+				top: <input type="text" name="header" size="3" value="auto" />&nbsp;bottom: <input size="3" type="text" name="footer" value="auto" />&nbsp;
+				left: <input type="text" name="axis" size="3" value="auto" />&nbsp;right: <input size="3" type="text" name="margin" value="auto" /><br />
+			</div><br/>
 			<div id="TitlesDiv">
-				<span class="tSpan">Titles:</span><br>
-				Main title:<br>
-				<textarea id="title" name="title" rows="3" cols="60" value="My chart"></textarea><br>
-				Source: <br>
-				<textarea id="source" name="source" rows="1" cols="60" style="resize:none;">OECD</textarea>
-				<br>
-				<table><tbody><tr><td>
+				<span class="tSpan">Titles:</span><br/>
+				Main title:<br/>
+				<textarea id="title" name="title" rows="3" cols="60" value="My chart"></textarea><br/>
+				Source: <br/>
+				<textarea id="source" name="source" rows="1" cols="60" style="resize:none;" />OECD</textArea>
+				<br/>
+				<table><tr><td>
 					<span class="tSpan">Legends:</span></td><td><span class="tSpan">Series options:</span></td></tr><tr><td>
 
-					Series 1: <input type="text" name="unit1"><br>
-					Series 2: <input type="text" name="unit2"><br>
-					Series 3: <input type="text" name="unit3"><br>
+					Series 1: <input type="text" name="unit1" /><br/>
+					Series 2: <input type="text" name="unit2" /><br/>
+					Series 3: <input type="text" name="unit3" /><br/>
 
 				</td><td>
 
-					<table><tbody><tr><td>Label angle:</td><td>
+					<table><tr><td>Label angle:</td><td>
 					<select id="lAngle">
-						<option value="0">0</option>
-						<option value="1">-30°</option>
-						<option value="2">-45°</option>
-						<option value="3">-90°</option>
+						<option value=0>0</option>
+						<option value=1>-30&deg;</option>
+						<option value=2>-45&deg;</option>
+						<option value=3>-90&deg;</option>
 					</select></td></tr><tr>
-					<td>Interval between horizontal ticks:</td><td><input type="text" name="hTicks" size="3"></td></tr><tr>
-					<td>Number of vertical ticks:</td><td><input type="text" name="vTicks" size="3" value="auto"></td></tr><tr>
-					<td>Minimum:&nbsp;<input type="text" name="fMin" size="2" value="auto">&nbsp;
-					Maximum:&nbsp;</td><td><input type="text" name="fMax" size="2" value="auto"></td>
-					<td>digits:</td><td><input type="digits" name="digits" size="2" value="0"></td></tr></tbody></table>
+					<td>Interval between horizontal ticks:</td><td><input type="text" name="hTicks" size="3" /></td></tr><tr>
+					<td>Number of vertical ticks:</td><td><input type="text" name="vTicks" size="3" value="auto"/></td></tr><tr>
+					<td>Minimum:&nbsp;<input type="text" name="fMin" size="2" value="auto"/>&nbsp;
+					Maximum:&nbsp;</td><td><input type="text" name="fMax" size="2" value="auto"/></td>
+					<td>digits:</td><td><input type="digits" name="digits" size="2" value="0"/></td></tr></table>
 				</td>
-				</tr></tbody></table>
+				</tr></table>
 			</div>
 			<div id="chartTypeDiv">
-				<table><tbody><tr><td>
+				<table><tr><td>
 				<span class="tSpan">Chart type:</span>
 				</td>
 				<td><span class="tSpan">Fonts:</span></td>
 				</tr>
-				<tr><td>
-				<input type="radio" name="chartType" checked="true" value="0">Clustered bars<br>
-				<input type="radio" name="chartType" value="1">Stacked bars<br>
-				<input type="radio" name="chartType" value="2">Lines<input type="checkbox" name="dots">with dots<br>
-				<br></td>
+				<td>
+				<input type="radio" name="chartType" checked="true" value="0" />Clustered bars<br />
+				<input type="radio" name="chartType" value="1" />Stacked bars<br />
+				<input type="radio" name="chartType" value="2" />Lines<input type="checkbox" name="dots" />with dots<br />
+				<br/></td>
 				<td><table>
-				<tbody><tr><td>Title:</td><td> <input type="text" name="ffTitle" value="auto"> </td></tr>
-				<tr><td>Subtitle:</td><td> <input type="text" name="ffsTitle" value="auto"> </td></tr>
-				<tr><td>Labels:</td><td> <input type="text" name="ffLabel" value="auto"> </td></tr>
-				<tr><td>Legends:</td><td> <input type="text" name="ffUnit" value="auto"> </td></tr></tbody></table>
+				<tr><td>Title:</td><td> <input type="text" name="ffTitle" value="auto" /> </td></tr>
+				<tr><td>Subtitle:</td><td> <input type="text" name ="ffsTitle" value="auto" /> </td></tr>
+				<tr><td>Labels:</td><td> <input type="text" name ="ffLabel" value="auto" /> </td></tr>
+				<tr><td>Legends:</td><td> <input type="text" name ="ffUnit" value="auto" /> </td></tr></table>
 				</td>
-				</tr></tbody></table>
-				<span class="tSpan">Color of main series: </span><br><br>
+				</tr></table>
+				<span class="tSpan">Color of main series: </span><br /><br/>
 				<div style="float:left;">
-				<div class="c0">&nbsp;<input type="radio" name="sColor" checked="true" value="0"></div>
-				<div class="c9">&nbsp;<input type="radio" name="sColor" value="1"></div>
-				<div class="c1">&nbsp;<input type="radio" name="sColor" value="2"></div>
-				<div class="c8">&nbsp;<input type="radio" name="sColor" value="3"></div>
-				<div class="c6">&nbsp;<input type="radio" name="sColor" value="4"></div>
-				<div class="c3">&nbsp;<input type="radio" name="sColor" value="5"></div>
-				<div class="c2">&nbsp;<input type="radio" name="sColor" value="6"></div>
-				<div class="c4">&nbsp;<input type="radio" name="sColor" value="7"></div>
-				<div class="c7">&nbsp;<input type="radio" name="sColor" value="8"></div>
-				<div class="c5">&nbsp;<input type="radio" name="sColor" value="9"></div>
+				<div class="c0">&nbsp;<input type="radio" name="sColor" checked="true" value="0" /></div>
+				<div class="c9">&nbsp;<input type="radio" name="sColor" value="1" /></div>
+				<div class="c1">&nbsp;<input type="radio" name="sColor" value="2" /></div>
+				<div class="c8">&nbsp;<input type="radio" name="sColor" value="3" /></div>
+				<div class="c6">&nbsp;<input type="radio" name="sColor" value="4" /></div>
+				<div class="c3">&nbsp;<input type="radio" name="sColor" value="5" /></div>
+				<div class="c2">&nbsp;<input type="radio" name="sColor" value="6" /></div>
+				<div class="c4">&nbsp;<input type="radio" name="sColor" value="7" /></div>
+				<div class="c7">&nbsp;<input type="radio" name="sColor" value="8" /></div>
+				<div class="c5">&nbsp;<input type="radio" name="sColor" value="9" /></div>
 			</div>
 		</div>
 	&nbsp;
 	</div>
-	<br><input type="button" value="Convert" onclick="csvToJson(); "> <input type="reset">
-
+	</br><input type="button" value="Convert" onclick="csvToJson(); " /> <input type="reset" />
+</form>
 <div id="chart">
 
 </div>
 <form id="result" name="result"><label>Javascript code:</label><input name="code" id="code"></form>
 <form id="svg" name="svg"><label>SVG output:</label><input name="svgoutput" id="svgoutput"></form>
 <span id="ruler"></span>
-
-
-</div></form><script type="text/javascript" src="chrome-extension://papagkpjldglcaifeipgcfkhddlefnkk/dist/injected.js"></script><div id="feedly-mini" title="feedly Mini tookit"></div></body></html>
+</body>
+</html>
